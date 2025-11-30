@@ -9,5 +9,5 @@ type LoggerConfig struct {
 // Embeds common configuration and adds provider-specific parameters.
 type ProviderConfig struct {
 	LoggerConfig        // Embedded base logger configuration
-	level       Level   // Provider-specific log level
+	Level       Level   // Provider-specific log level
 }

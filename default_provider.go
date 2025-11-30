@@ -55,7 +55,7 @@ func (p *fmtProvider) Write(ctx context.Context, level Level, message string, fi
 // ShouldLog определяет, нужно ли логировать сообщение данного уровня.
 // Использует минимальный уровень логирования из конфигурации провайдера.
 func (p *fmtProvider) ShouldLog(ctx context.Context, level Level) bool {
-	return level >= p.config.level
+	return level >= p.config.Level
 }
 
 // Close реализует метод закрытия провайдера. 
